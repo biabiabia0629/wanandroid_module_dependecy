@@ -8,6 +8,7 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.biabiabia.wanandroid_compose.dependency.Dependencies
 import com.biabiabia.wanandroid_dependency.ui.theme.DependencyTheme
 
 class MainActivity : ComponentActivity() {
@@ -26,7 +27,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+    Text(text = "Hello ${Dependencies.androidx_core_core_ktx}!")
 }
 
 @Preview(showBackground = true)

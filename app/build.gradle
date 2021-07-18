@@ -57,4 +57,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+
+    implementation 'com.biabiabia.wanandroid_compose:module_dependency:0.0.1-20210718.131306-3'
 }
