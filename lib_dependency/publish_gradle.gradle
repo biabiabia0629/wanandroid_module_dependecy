@@ -19,15 +19,15 @@ def getRepositoryUrl() {
 afterEvaluate {
     publishing {
         publications {
-            /*Production(MavenPublication) {
+            Production(MavenPublication) {
                 from components.java
-                // 使用方引用 implementation 'cn.com.jack:mavendemo:2.7.0-SNAPSHOT'
+
                 groupId = GROUP
                 artifactId = POM_ARTIFACT_ID
                 version = VERSION_NAME
                 // 上传source，这样使用放可以看到方法注释
-                artifact generateSourcesJar
-            }*/
+//                artifact generateSourcesJar
+            }
 
             // Creates a Maven publication called "release".
             /*release(MavenPublication) {
@@ -74,7 +74,7 @@ afterEvaluate {
         }
     }
 
-    task androidJavadocs(type: Javadoc) {
+    /*task androidJavadocs(type: Javadoc) {
         source = android.sourceSets.main.java.srcDirs
         classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
     }
@@ -86,15 +86,15 @@ afterEvaluate {
         classifier = 'sources'
         from android.sourceSets.main.java.sourceFiles
     }
-
+*/
     //解决 JavaDoc 中文注释生成失败的问题
     tasks.withType(Javadoc) {
         options.addStringOption('Xdoclint:none', '-quiet')
         options.addStringOption('encoding', 'UTF-8')
         options.addStringOption('charSet', 'UTF-8')
     }
-    artifacts {
+    /*artifacts {
         archives androidSourcesJar
         archives androidJavadocsJar
-    }
+    }*/
 }
