@@ -20,13 +20,13 @@ afterEvaluate {
     publishing {
         publications {
             Production(MavenPublication) {
-                from components.java
-
                 groupId = GROUP
                 artifactId = POM_ARTIFACT_ID
                 version = VERSION_NAME
                 // 上传source，这样使用放可以看到方法注释
                 artifact kotlinSourcesJar
+
+                from components.java
             }
 
             // Creates a Maven publication called "release".

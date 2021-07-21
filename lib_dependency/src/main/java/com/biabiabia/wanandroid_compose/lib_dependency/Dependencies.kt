@@ -19,7 +19,7 @@ object Dependencies {
     const val androidx_compose_ui_ui = "androidx.compose.ui:ui:${Versions.androidx_compose_ui_ui}"
 
     const val androidx_compose_material_material =
-        "androidx.compose.material:material::${Versions.androidx_compose_material_material}"
+        "androidx.compose.material:material:${Versions.androidx_compose_material_material}"
 
     const val androidx_compose_ui_ui_tooling =
         "androidx.compose.ui:ui-tooling:${Versions.androidx_compose_ui_ui_tooling}"
