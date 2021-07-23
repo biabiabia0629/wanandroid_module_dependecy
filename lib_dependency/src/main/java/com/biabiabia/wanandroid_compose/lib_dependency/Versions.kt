@@ -14,4 +14,5 @@ object Versions {
     const val androidx_test_ext_junit = "1.1.2"
     const val androidx_test_espresso_espresso_core = "3.3.0"
     const val androidx_compose_ui_ui_test_junit4 = compose_version
+    const val com_squareup_retrofit2_retrofit = "2.9.0"
 }

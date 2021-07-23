@@ -41,5 +41,6 @@ object Dependencies {
     const val androidx_compose_ui_ui_test_junit4 =
         "androidx.compose.ui:ui-test-junit4:${Versions.androidx_compose_ui_ui_test_junit4}"
 
-
+    const val com_squareup_retrofit2_retrofit =
+        "com.squareup.retrofit2:retrofit${Versions.com_squareup_retrofit2_retrofit}"
 }
