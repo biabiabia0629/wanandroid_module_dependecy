@@ -24,7 +24,7 @@ afterEvaluate {
                 artifactId = POM_ARTIFACT_ID
                 version = VERSION_NAME
                 // 上传source，这样使用放可以看到方法注释
-                artifact kotlinSourcesJar
+//                artifact kotlinSourcesJar
 
                 from components.java
             }
